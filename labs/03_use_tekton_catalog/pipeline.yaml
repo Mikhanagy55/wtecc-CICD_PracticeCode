@@ -13,7 +13,7 @@ spec:
     - name: clone
       workspaces:
         - name: output
-            workspace: pipeline-workspace
+          workspace: pipeline-workspace
       taskRef:
         name: git-clone
       params:
@@ -57,4 +57,5 @@ spec:
         value: "Deploying $(params.branch) branch of $(params.repo-url) ..."
       runAfter:
         - build
+
 #mikhaaaa
